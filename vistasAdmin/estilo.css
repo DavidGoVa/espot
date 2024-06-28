@@ -1,0 +1,369 @@
+:root{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.wrap-de-todo{
+    width: 100%;
+    height: 100%;
+}
+
+/*------------------------------ NAVBAR -----------------------------------*/
+
+.wrap-de-navbar{
+    width: auto;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.icono{
+    max-width: 40%;
+}
+
+
+
+.icono img{
+    height: 75px;
+    max-height: 75px;
+}
+
+.links-navegacion{
+    margin-right: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;   
+}
+
+.links-navegacion ul li{
+    margin: 0 10px;
+}
+
+.links-navegacion ul{
+    width: 70%;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;    
+}
+
+.fotoPerfil{
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+}
+
+:root a{
+     text-decoration: none;
+}
+/*------------------------------ CONTENIDO -----------------------------------*/
+
+/*------------------------------ CONTENIDO publicitario -----------------------------------*/
+.contenidoRandom{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.publicidadCompra{
+    width: 100%;
+}
+.publicidadCompra img{
+    width: 100%;
+}
+.publicidadCompra button{
+    position: absolute;
+    left: 150px;
+    bottom: 20%;
+    width: 300px;
+    height: 140px;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 40px;
+    font-weight: bolder;
+    color: white;
+    border: solid 3px white;  
+    transition: background-color 0.4s; 
+}
+.publicidadCompra button:hover{
+    background-color: white;
+    color: black;
+    border: solid 3px black;
+}
+/*------------------------------ CONTENIDO categorias-----------------------------------*/
+.Categorias{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 70px;
+}
+.Categorias button{
+    width: 300px;
+    height: 300px;
+    
+    background-color: aliceblue;
+    border: solid 2.5px black;
+    transition: background-color 0.4s
+}
+.Categorias button:hover{
+    background-color: beige  ;
+}
+/*------------------------------ Pie de pagina-----------------------------------*/
+
+.piedepagina{
+    width: 100%;
+    background-color: gray;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+}
+/*------------------------------ Pie de pagina columna izquierda-----------------------------------*/
+.ppIzq{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 33%;
+    height: 250px;
+}
+.ppIzq img{
+    height: 50px;
+    max-width: fit-content;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+.ppIzq h4{
+    margin-left: 120px;
+    margin-top: 50px;
+}
+.ppIzq ul{
+    list-style: none;
+    margin-left: 60px;
+}
+.ppIzq li{
+    margin-bottom: 20px;
+}
+/*------------------------------ Pie de pagina columna central-----------------------------------*/
+.ppMedio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 33%;
+    height: 250px;
+}
+
+.ppMedio h4{
+    margin-left: 120px;
+    margin-top: 50px;
+}
+.ppMedio ul{
+    list-style: none;
+    margin-left: 60px;
+}
+.ppMedio li{
+    margin-bottom: 20px;
+}
+/*------------------------------ Pie de pagina columna derecha-----------------------------------*/
+.ppDerecha{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 33%;
+    height: 250px;
+}
+
+.ppDerecha h4{
+    margin-left: 120px;
+    margin-top: 50px;
+}
+.ppDerecha ul{
+    list-style: none;
+    margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+}
+.ppDerecha img{
+    margin-bottom: 20px;
+}
+/*----------------------------VER CARROS---------------------------------*/
+/*----------------------------bUSQUEDA TEXTO-----------------------------*/
+.displayCarros{
+    width: 100%;
+    
+}
+.wrapbusqueda{
+    width: 98%;
+    background-color: lightblue;
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+}
+.busquedaDirecta{
+    width: 85%;
+    display: flex;
+    justify-content: center;
+}
+.busquedaDirecta input{
+    width: 80%;
+    height: 20px;
+}
+.wrapbusqueda button{
+    transition: background-color 0.4s;
+}
+.wrapbusqueda button:hover{
+    background-color: transparent;
+    color: black;
+}
+.filtros{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    margin-left: 10px;
+    width: 15%;
+    
+}
+.botonXd{
+    display:flex;
+    align-items: center;
+    background-color: transparent;
+    border: transparent;
+}
+.divBotonXd{
+    
+    display:flex;
+    
+    border-bottom:solid 1px gray;
+     margin-top:10px;
+    
+     transition: background-color 0.6s;
+}
+.divBotonXd:hover{
+background-color: lightgray;
+border-bottom: solid 3px gray;
+
+}
+.contenedorAutos {
+    width: 80%;
+    transition: width 0.5s ease;
+}
+
+.contenedorAutos.expand {
+    width: 300%;
+}
+
+.areaCarrosF{
+    width: 100%;
+    display: flex;
+
+}
+.autos{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+}
+.producto{
+    box-sizing: border-box;
+    padding: 10px;
+}
+.articuloAuto{
+    width: 100%;
+
+}
+.articuloAuto img{
+    width: 100%;
+    height: fit-content;
+    border-radius: 15px;
+}
+.dirigeAuto{
+    cursor: pointer;
+}
+
+.pA {
+    font-size: x-large;
+    text-align: center;  
+  }
+  .precioAuto{
+    border: solid 1px darkgray;
+    
+  }
+
+
+
+.marcoProd{
+    border: solid 1px black;
+    border-radius: 10px;
+    
+}
+.marcoProd h2{
+    text-align: center;
+    
+}
+.mainProd{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contC{
+    display: flex;
+    flex-direction: column;
+}
+
+.formularioCC{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.formCC{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.formCC input{
+    width: 80%;
+}
+.auto{
+    border: solid 2px black;  
+}
+:root button{
+ cursor: pointer;
+
+ 
+}
+.opciones{
+    display: none;
+}
+/*----------------------DATOS PERSONALES USUARIO------------------------------*/
+
+.contenidoDashC{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.datosC{
+    border: solid 1px black;
+    padding: 1px;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+}
+.datosCT{ 
+    
+    width: 100%;
+    border-collapse: collapse;
+}
+.datosCT th, td{
+    
+    border: solid 1px red;
+    width: auto;
+
+}
+.datosCT td{
+    text-indent: 5px;
+    
+
+}
+

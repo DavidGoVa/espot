@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+<link rel="stylesheet" href="estilo.css">
+	
+</head>
+
+<body id="page-top" class="bodyRegi">
+
+
+<form  action="./includes/validar.php" method="POST" enctype="multipart/form-data" class="formRegi">
+<div id="login" >
+        <div>
+            <div id="login-row">
+                <div id="login-column">
+                    <div id="login-box" class="lbDiv">              
+                            <br>
+                            <br>
+                            <h3>Registro de nuevo usuario</h3>
+                            <div class="macaco">
+                                <br>
+                            
+                            <input type="text"  id="nombre" name="nombre" placeholder="nombre" required>
+                            </div>
+                            
+                            <div class="macaco">
+                                
+                                <input type="email" name="correo" id="correo"placeholder="Correo electronico" required>
+                            </div>
+                            
+                            <div class="macaco">
+                                  
+                                <input type="number"  id="telefono" name="telefono" placeholder="Número telefónico" required>
+                                
+                            </div>
+                            
+                            <div class="macaco">
+                                
+                                <input type="password" name="password" id="password" placeholder="Contraseña" required>
+                            </div>    
+                            
+                            <div class="macaco">
+                                <label for="pp">Foto de perfil (opciona)</label>
+                                <div style="display: flex; justify-content: end; width: 130%;"><input type="file" id="pp" name="pp" style="width: 76%;"></div>
+                                
+                            </div>
+                        
+                           <br>
+
+                                <div>
+                                    
+                               <input type="submit" id="estexd" value="Guardar"
+                               name="registrar">
+                               <p>Si ya tienes cuenta <a href="loginCliente.php">inicia sesión</a></p>
+                               <br>
+                               <p><a href="inicio.html">Regresar</a></p>
+                               
+                            </div>
+                            </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>
